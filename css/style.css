@@ -1,0 +1,78 @@
+.page-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "left-half right-half"
+}
+
+.page-grid .left-half *{
+    padding-left: 25%;
+    font-family: Avenir;
+    padding-right: 15%;
+    color: grey;
+
+}
+
+
+.page-grid .left-half h2{
+    padding-left: 20%;
+    font-family: Avenir;
+    font-size: 25px;
+    
+    
+}
+
+#top-line{
+    padding-top: 30%;
+}
+
+.sub-taglines{
+    padding-top: 5%;
+}
+
+#credit{
+    padding-left: 5%;
+    padding-top: 25%;
+}
+
+.right-half{
+    background: url(../img/waves-bg.jpg);
+    
+}
+
+.navbar{
+    box-shadow: none !important;
+}
+
+.nav-link{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 20px !important;
+    font-family: avenir !important;
+    color: white !important;
+}
+
+@media only screen and (max-width: 780px){
+    .left-half{
+        grid-area: left-half;
+        height: 1500px;
+        width: 500px;
+    }
+    .right-half{
+        grid-area: right-half;
+        height: 1500px;
+        width: 500px;
+        background: url(../img/waves-bg-mobile.jpg)
+    }
+    .page-grid{
+        display: grid;
+        grid-template-columns: 3000px;
+        grid-template-rows: 500px 500px;
+        grid-template-areas: 
+        "right-half"
+        "left-half"
+        
+    }
+
+}
