@@ -22,7 +22,6 @@
     
     
 }
-
 #top-line{
     padding-top: 30%;
 }
@@ -56,23 +55,35 @@
 @media only screen and (max-width: 780px){
     .left-half{
         grid-area: left-half;
-        height: 1500px;
+        height: 750px;
         width: 500px;
+    }
+
+    .left-half h2{
+        font-size: 16px;
+        color: grahite;
     }
     .right-half{
         grid-area: right-half;
-        height: 1500px;
+        height: 750px;
         width: 500px;
-        background: url(../img/waves-bg-mobile.jpg)
+       background-color: black;
+       background-image: none;
     }
     .page-grid{
         display: grid;
-        grid-template-columns: 3000px;
-        grid-template-rows: 500px 500px;
+        grid-template-columns: 500px;
+        grid-template-rows: 750px 750px;
         grid-template-areas: 
         "right-half"
         "left-half"
         
+    }
+
+    button.navbar-toggler{
+        background-color: #52526c;
+        border-radius: 5px;
+        box-shadow: 1px 1px #979797;
     }
 
 }
