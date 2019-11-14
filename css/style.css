@@ -1,21 +1,19 @@
-.page-grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-    "left-half right-half"
-}
 
-.page-grid .left-half *{
+.hero-text{
+    z-index: 50;
+    position: fixed;
+}
+.hero-text *{
     padding-left: 25%;
     font-family: Avenir;
-    padding-right: 15%;
-    color: grey;
+    padding-right: 25%;
+    color: white;
+    z-index: 100;
 
 }
 
 
-.page-grid .left-half h2{
+.left-half h2{
     padding-left: 20%;
     font-family: Avenir;
     font-size: 25px;
@@ -23,11 +21,11 @@
     
 }
 #top-line{
-    padding-top: 30%;
+    padding-top: 17%;
 }
 
 .sub-taglines{
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 #credit{
@@ -42,6 +40,7 @@
 
 .navbar{
     box-shadow: none !important;
+    z-index: 100 !important;
 }
 
 .nav-link{
@@ -52,6 +51,29 @@
     color: white !important;
 }
 
+
+
+
+.video-bg{
+    width:100%;
+    height:100%;
+    display:absolute;
+    justify-content: center; 
+    align-items: center;
+    object-fit: cover;
+    
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    
+  }
 @media only screen and (max-width: 780px){
     .left-half{
         grid-area: left-half;
@@ -70,15 +92,7 @@
        background-color: black;
        background-image: none;
     }
-    .page-grid{
-        display: grid;
-        grid-template-columns: 500px;
-        grid-template-rows: 750px 750px;
-        grid-template-areas: 
-        "right-half"
-        "left-half"
-        
-    }
+   
 
     button.navbar-toggler{
         background-color: #52526c;
